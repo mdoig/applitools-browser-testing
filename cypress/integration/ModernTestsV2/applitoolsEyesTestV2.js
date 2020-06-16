@@ -7,8 +7,7 @@ describe('Applitools Eyes Modern Test', () => {
     cy.eyesOpen({
       appName: 'AppliFashion',
       batchName: 'UFG Hackathon',
-      browser: browserCombo,
-      concurrency: 10
+      browser: browserCombo
     });
     cy.viewport(800, 600);
     cy.visit(route);
@@ -23,6 +22,7 @@ describe('Applitools Eyes Modern Test', () => {
   });
 
   it('Task 2', () => {
+    cy.contains('a.open_filters', 'Filters').click();
     cy.get('#LABEL__containerc__104').click();
     cy.get('#filterBtn.btn_1').click();
     cy.eyesCheckWindow({
