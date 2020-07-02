@@ -62,12 +62,15 @@ describe('Task 1', () => {
 
   it('checks grid view icons visibility', () => {
     cy.viewport(1200, 700);
-    cy.get('#LI____200').should('be.visible');
+    cy.get('#A____201').should('be.visible');
+    cy.get('#A____203').should('be.visible');
     cy.viewport(768, 700);
-    cy.get('#LI____200').should('not.be.visible');
+    cy.get('#A____201').should('not.be.visible');
+    cy.get('#A____203').should('not.be.visible');
     if (Cypress.browser.name === 'chrome') {
       cy.viewport(500, 700);
-      cy.get('#LI____200').should('not.be.visible');
+      cy.get('#A____201').should('not.be.visible');
+      cy.get('#A____203').should('not.be.visible');
     };
   });
 
@@ -84,20 +87,20 @@ describe('Task 1', () => {
 
   it('checks filter icon visibility', () => {
     cy.viewport(1200, 700);
-    cy.get('#ti-filter').should('be.visible');
-    cy.viewport(768, 700);
     cy.get('#ti-filter').should('not.be.visible');
+    cy.viewport(768, 700);
+    cy.get('#ti-filter').should('be.visible');
     if (Cypress.browser.name === 'chrome') {
       cy.viewport(500, 700);
-      cy.get('#ti-filter').should('not.be.visible');
+      cy.get('#ti-filter').should('be.visible');
     };
   });
 
   // it('checks product grid row count', () => {
-    // TK
+  // TK
   // });
 
   // it('checks item quick options visibility', () => {
-    // TK
+  // TK
   // });
 });
