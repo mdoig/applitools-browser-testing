@@ -96,11 +96,32 @@ describe('Task 1', () => {
     };
   });
 
-  // it('checks product grid row count', () => {
-  // TK
-  // });
-
-  // it('checks item quick options visibility', () => {
-  // TK
-  // });
+  it('checks item quick options visibility', () => {
+    cy.viewport(1200, 700);
+    cy.get('#product_grid').children().then((divs) => {
+      for (let i = 0; i < divs.length; i++) {
+        cy.get(divs[i]).within(() => {
+          cy.get('ul').should('not.be.visible');
+        });
+      }
+    });
+    cy.viewport(768, 700);
+    cy.get('#product_grid').children().then((divs) => {
+      for (let i = 0; i < divs.length; i++) {
+        cy.get(divs[i]).within(() => {
+          cy.get('ul').should('be.visible');
+        });
+      }
+    });
+    if (Cypress.browser.name === 'chrome') {
+      cy.viewport(500, 700);
+      cy.get('#product_grid').children().then((divs) => {
+        for (let i = 0; i < divs.length; i++) {
+          cy.get(divs[i]).within(() => {
+            cy.get('ul').should('be.visible');
+          });
+        }
+      });
+    };
+  });
 });
