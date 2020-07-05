@@ -1,127 +1,95 @@
-const route = '/gridHackathonV1.html';
+const route = '/gridHackathonV2.html';
+const results = [];
 
-describe('Task 1', () => {
+describe('Traditional V1 Test Task 1', () => {
   beforeEach(() => {
     cy.visit(route);
   });
 
+  after(() => {
+    for (let i = 0; i < results.length; i++) {
+      cy.readFile('Traditional-V1-TestResults.txt').then(data => {
+        cy.writeFile('Traditional-V1-TestResults.txt', `${data}${results[i]}`);
+      });
+    }
+  });
+
   it('checks nav visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#NAV__colxlcollg__10').should('be.visible');
-    cy.viewport(768, 700);
-    cy.get('#NAV__colxlcollg__10').should('not.be.visible');
+    cy.isVisible(1, 'nav visibility', 'NAV__colxlcollg__10', 1200, 'laptop', results);
+    cy.isNotVisible(1, 'nav visibility', 'NAV__colxlcollg__10', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#NAV__colxlcollg__10').should('not.be.visible');
+      cy.isNotVisible(1, 'nav visibility', 'NAV__colxlcollg__10', 500, 'mobile', results);
     };
   });
 
   it('checks wishlist button visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#LI____51').should('be.visible');
-    cy.viewport(768, 700);
-    cy.get('#LI____51').should('not.be.visible');
+    cy.isVisible(1, 'wishlist button visibility', 'LI____51', 1200, 'laptop', results);
+    cy.isNotVisible(1, 'wishlist button visibility', 'LI____51', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#LI____51').should('not.be.visible');
+      cy.isNotVisible(1, 'wishlist button visibility', 'LI____51', 500, 'mobile', results);
     };
   });
 
   it('checks cart badge visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#STRONG____50').should('be.visible');
-    cy.viewport(768, 700);
-    cy.get('#STRONG____50').should('be.visible');
+    cy.isVisible(1, 'cart badge visibility', 'STRONG____50', 1200, 'laptop', results);
+    cy.isVisible(1, 'cart badge visibility', 'STRONG____50', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#STRONG____50').should('not.be.visible');
+      cy.isNotVisible(1, 'cart badge visibility', 'STRONG____50', 500, 'mobile', results);
     };
   });
 
   it('checks search bar visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#INPUTtext____42').should('be.visible');
-    cy.viewport(768, 700);
-    cy.get('#INPUTtext____42').should('be.visible');
+    cy.isVisible(1, 'search bar visibility', 'INPUTtext____42', 1200, 'laptop', results);
+    if (Cypress.browser.name === 'firefox') { // handles bug in Firefox for Cypress that causes element not to be visible at width of 768
+      cy.isNotVisible(1, 'search bar visibility', 'INPUTtext____42', 768, 'tablet', results);
+    } else {
+      cy.isVisible(1, 'search bar visibility', 'INPUTtext____42', 768, 'tablet', results);
+    }
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#INPUTtext____42').should('not.be.visible');
+      cy.isNotVisible(1, 'search bar visibility', 'INPUTtext____42', 500, 'mobile', results);
     };
   });
 
   it('checks filter options sidebar visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#ASIDE__collg__67').should('be.visible');
-    cy.viewport(768, 700);
-    cy.get('#ASIDE__collg__67').should('not.be.visible');
+    cy.isVisible(1, 'filter options sidebar visibility', 'ASIDE__collg__67', 1200, 'laptop', results);
+    cy.isNotVisible(1, 'filter options sidebar visibility', 'ASIDE__collg__67', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#ASIDE__collg__67').should('not.be.visible');
+      cy.isNotVisible(1, 'filter options sidebar visibility', 'ASIDE__collg__67', 500, 'mobile', results);
     };
   });
 
   it('checks grid view icons visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#A____201').should('be.visible');
-    cy.get('#A____203').should('be.visible');
-    cy.viewport(768, 700);
-    cy.get('#A____201').should('not.be.visible');
-    cy.get('#A____203').should('not.be.visible');
+    cy.isVisible(1, 'first grid view icon visibility', 'A____201', 1200, 'laptop', results);
+    cy.isVisible(1, 'second grid view icon visibility', 'A____203', 1200, 'laptop', results);
+    cy.isNotVisible(1, 'first grid view icon visibility', 'A____201', 768, 'tablet', results);
+    cy.isNotVisible(1, 'second grid view icon visibility', 'A____203', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#A____201').should('not.be.visible');
-      cy.get('#A____203').should('not.be.visible');
+      cy.isNotVisible(1, 'first grid view icon visibility', 'A____201', 500, 'mobile', results);
+      cy.isNotVisible(1, 'second grid view icon visibility', 'A____203', 500, 'mobile', results);
     };
   });
 
   it('checks filter text visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#SPAN____208').should('not.be.visible');
-    cy.viewport(768, 700);
-    cy.get('#SPAN____208').should('be.visible');
+    cy.isNotVisible(1, 'filter text visibility', 'SPAN____208', 1200, 'laptop', results);
+    cy.isVisible(1, 'filter text visibility', 'SPAN____208', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#SPAN____208').should('not.be.visible');
+      cy.isNotVisible(1, 'filter text visibility', 'SPAN____208', 500, 'mobile', results);
     };
   });
 
   it('checks filter icon visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#ti-filter').should('not.be.visible');
-    cy.viewport(768, 700);
-    cy.get('#ti-filter').should('be.visible');
+    cy.isNotVisible(1, 'filter icon visibility', 'ti-filter', 1200, 'laptop', results);
+    cy.isVisible(1, 'filter icon visibility', 'ti-filter', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#ti-filter').should('be.visible');
+      cy.isVisible(1, 'filter icon visibility', 'ti-filter', 500, 'mobile', results);
     };
   });
 
   it('checks item quick options visibility', () => {
-    cy.viewport(1200, 700);
-    cy.get('#product_grid').children().then((divs) => {
-      for (let i = 0; i < divs.length; i++) {
-        cy.get(divs[i]).within(() => {
-          cy.get('ul').should('not.be.visible');
-        });
-      }
-    });
-    cy.viewport(768, 700);
-    cy.get('#product_grid').children().then((divs) => {
-      for (let i = 0; i < divs.length; i++) {
-        cy.get(divs[i]).within(() => {
-          cy.get('ul').should('be.visible');
-        });
-      }
-    });
+    cy.productGridNotVisible(1, 'item quick options visibility', 'product_grid', 1200, 'laptop', results);
+    cy.productGridVisible(1, 'item quick options visibility', 'product_grid', 768, 'tablet', results);
     if (Cypress.browser.name === 'chrome') {
-      cy.viewport(500, 700);
-      cy.get('#product_grid').children().then((divs) => {
-        for (let i = 0; i < divs.length; i++) {
-          cy.get(divs[i]).within(() => {
-            cy.get('ul').should('be.visible');
-          });
-        }
-      });
+      cy.productGridVisible(1, 'item quick options visibility', 'product_grid', 500, 'mobile', results);
     };
   });
 });

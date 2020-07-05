@@ -24,7 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-// Report writer command
 Cypress.Commands.add('isVisible', (taskNumber, testName, domId, viewportWidth, device, arrayName) => {
   let result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Fail\n`;
   arrayName.push(result);
@@ -44,5 +43,39 @@ Cypress.Commands.add('isNotVisible', (taskNumber, testName, domId, viewportWidth
     arrayName.pop();
     result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Pass\n`;
     arrayName.push(result);
+  });
+});
+
+Cypress.Commands.add('productGridVisible', (taskNumber, testName, domId, viewportWidth, device, arrayName) => {
+  let result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Fail\n`;
+  arrayName.push(result);
+  cy.viewport(viewportWidth, 700);
+  cy.get(`#${domId}`).children().then((divs) => {
+    for (let i = 0; i < divs.length; i++) {
+      cy.get(divs[i]).within(() => {
+        cy.get('ul').should('be.visible').then(() => {
+          arrayName.pop();
+          result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Pass\n`;
+          arrayName.push(result);
+        });
+      });
+    }
+  });
+});
+
+Cypress.Commands.add('productGridNotVisible', (taskNumber, testName, domId, viewportWidth, device, arrayName) => {
+  let result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Fail\n`;
+  arrayName.push(result);
+  cy.viewport(viewportWidth, 700);
+  cy.get(`#${domId}`).children().then((divs) => {
+    for (let i = 0; i < divs.length; i++) {
+      cy.get(divs[i]).within(() => {
+        cy.get('ul').should('not.be.visible').then(() => {
+          arrayName.pop();
+          result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Pass\n`;
+          arrayName.push(result);
+        });
+      });
+    }
   });
 });
