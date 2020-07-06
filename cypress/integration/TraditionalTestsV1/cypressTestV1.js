@@ -1,4 +1,4 @@
-const route = '/gridHackathonV2.html';
+const route = '/gridHackathonV1.html';
 const results = [];
 
 describe('Traditional V1 Test Task 1', () => {
