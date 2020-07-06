@@ -1,0 +1,70 @@
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Fail
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Fail
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Fail
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Fail
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Fail
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Fail
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: nav visibility, DOM Id: NAV__colxlcollg__10, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: wishlist button visibility, DOM Id: LI____51, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: cart badge visibility, DOM Id: STRONG____50, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: search bar visibility, DOM Id: INPUTtext____42, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: filter options sidebar visibility, DOM Id: ASIDE__collg__67, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: first grid view icon visibility, DOM Id: A____202, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: second grid view icon visibility, DOM Id: A____204, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: filter text visibility, DOM Id: SPAN____209, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Fail
