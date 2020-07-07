@@ -155,3 +155,65 @@ describe('Traditional V2 Test Task 1', () => {
     };
   });
 });
+
+describe('Traditional V2 Test Task 2', () => {
+  beforeEach(() => {
+    cy.visit(route);
+    cy.viewport(800, 600); // set viewport same as in modern approach to ensure necessary buttons are visible before applying filter
+    cy.contains('a.open_filters', 'Filters').click();
+    cy.get('#LABEL__containerc__104').click();
+    cy.get('#filterBtn.btn_1').click();
+  });
+
+  after(() => {
+    for (let i = 0; i < results.length; i++) {
+      cy.readFile('Traditional-V2-TestResults.txt').then(data => {
+        cy.writeFile('Traditional-V2-TestResults.txt', `${data}${results[i]}`);
+      });
+    }
+  });
+
+  // every command gets its own `it` to ensure every test runs even if another fails
+  it('checks correct number of products in filter results 1200x700', () => {
+    cy.filterResultsNumbers(2, 'filter results count', 'product_grid', 1200, 'laptop', results);
+  });
+
+  it('checks correct number of products in filter results 768x700', () => {
+    cy.filterResultsNumbers(2, 'filter results count', 'product_grid', 768, 'tablet', results);
+  });
+
+  it('checks correct number of products in filter results 500x700 (chrome only)', () => {
+    if (Cypress.browser.name === 'chrome') {
+      cy.filterResultsNumbers(2, 'filter results count', 'product_grid', 500, 'mobile', results);
+    };
+  });
+
+  // rest of these tests check that black shoes we expect are the ones visible after filter applied
+  it('checks first of correct products appear in filter results 1200x700', () => {
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__211', 1200, 'laptop', results);
+  });
+
+  it('checks first of correct products appear in filter results 768x700', () => {
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__211', 768, 'tablet', results);
+  });
+
+  it('checks first of correct products appear in filter results 500x700 (chrome only)', () => {
+    if (Cypress.browser.name === 'chrome') {
+      cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__211', 500, 'mobile', results);
+    };
+  });
+
+  it('checks second of correct products appear in filter results 1200x700', () => {
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__236', 1200, 'laptop', results);
+  });
+
+  it('checks second of correct products appear in filter results 768x700', () => {
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__236', 768, 'tablet', results);
+  });
+
+  it('checks second of correct products appear in filter results 500x700 (chrome only)', () => {
+    if (Cypress.browser.name === 'chrome') {
+      cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__236', 500, 'mobile', results);
+    };
+  });
+});

@@ -93,3 +93,41 @@ describe('Traditional V1 Test Task 1', () => {
     };
   });
 });
+
+describe('Traditional V1 Test Task 2', () => {
+  beforeEach(() => {
+    cy.visit(route);
+    cy.viewport(800, 600); // set viewport same as in modern approach to ensure necessary buttons are visible before applying filter
+    cy.contains('a.open_filters', 'Filters').click();
+    cy.get('#LABEL__containerc__104').click();
+    cy.get('#filterBtn.btn_1').click();
+  });
+
+  after(() => {
+    for (let i = 0; i < results.length; i++) {
+      cy.readFile('Traditional-V1-TestResults.txt').then(data => {
+        cy.writeFile('Traditional-V1-TestResults.txt', `${data}${results[i]}`);
+      });
+    }
+  });
+
+  it('checks correct number of products in filter results', () => {
+    cy.filterResultsNumbers(2, 'filter results count', 'product_grid', 1200, 'laptop', results);
+    cy.filterResultsNumbers(2, 'filter results count', 'product_grid', 768, 'tablet', results);
+    if (Cypress.browser.name === 'chrome') {
+      cy.filterResultsNumbers(2, 'filter results count', 'product_grid', 500, 'mobile', results);
+    };
+  });
+
+  // checks that the black shoes we expect are the ones visible after filter applied
+  it('checks correct products appear in filter results', () => {
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__210', 1200, 'laptop', results);
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__235', 1200, 'laptop', results);
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__210', 768, 'tablet', results);
+    cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__235', 768, 'tablet', results);
+    if (Cypress.browser.name === 'chrome') {
+      cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__210', 500, 'mobile', results);
+      cy.isVisible(2, 'filter results visibility', 'DIV__colcolmd__235', 500, 'mobile', results);
+    };
+  });
+});

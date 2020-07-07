@@ -1,6 +1,6 @@
 // ***********************************************
 // 
-// All four custom commands accept the same parameters.
+// All five custom commands accept the same parameters.
 // @param taskNumber -- the number of the hackathon task
 // @param testName -- name of the test
 // @param domId -- id of the element being tested
@@ -64,5 +64,16 @@ Cypress.Commands.add('productGridNotVisible', (taskNumber, testName, domId, view
         });
       });
     }
+  });
+});
+
+Cypress.Commands.add('filterResultsNumbers', (taskNumber, testName, domId, viewportWidth, device, arrayName) => {
+  let result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Fail\n`;
+  arrayName.push(result);
+  cy.viewport(viewportWidth, 700);
+  cy.get(`#${domId}`).children().should('have.length', 2).then(() => {
+    arrayName.pop();
+    result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Pass\n`;
+    arrayName.push(result);
   });
 });

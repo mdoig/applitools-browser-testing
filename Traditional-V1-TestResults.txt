@@ -68,3 +68,24 @@ Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: edge, Vi
 Task: 1, Test Name: filter icon visibility, DOM Id: ti-filter, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
 Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
 Task: 1, Test Name: item quick options visibility, DOM Id: product_grid, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results count, DOM Id: product_grid, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
