@@ -89,3 +89,80 @@ Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Brows
 Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
 Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__210, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
 Task: 2, Test Name: filter results visibility, DOM Id: DIV__colcolmd__235, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: chrome, Viewport: 768 x 700, Device: table, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: chrome, Viewport: 500 x 700, Device: mobile, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: firefox, Viewport: 768 x 700, Device: table, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: firefox, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product name visibility and accuracy, DOM Id: shoe_name, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product image visibility, DOM Id: shoe_img, Browser: edge, Viewport: 768 x 700, Device: table, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product rating visibility, DOM Id: SPAN__rating__76, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: product sku visibility and accuracy, DOM Id: SMALL____84, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: size selector visibility, DOM Id: DIV__row__88, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: size selector default option accuracy, DOM Id: OPTION____94, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: quantity selector visibility, DOM Id: DIV__row__98, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: price visibility and accuracy, DOM Id: new_price, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: old price visibility and accuracy, DOM Id: old_price, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: discount visibility, DOM Id: discount, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: add to cart button visibility, DOM Id: DIV__btnaddtoca__113, Browser: edge, Viewport: 768 x 700, Device: tablet, Status: Pass
