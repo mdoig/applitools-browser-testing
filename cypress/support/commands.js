@@ -77,3 +77,25 @@ Cypress.Commands.add('filterResultsNumbers', (taskNumber, testName, domId, viewp
     arrayName.push(result);
   });
 });
+
+Cypress.Commands.add('isVisibleCheckAttr', (taskNumber, testName, domId, viewportWidth, device, arrayName, chainer, value) => {
+  let result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Fail\n`;
+  arrayName.push(result);
+  cy.viewport(viewportWidth, 700);
+  cy.get(`#${domId}`).should('be.visible').should(chainer, value).then(() => {
+    arrayName.pop();
+    result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Pass\n`;
+    arrayName.push(result);
+  });
+});
+
+Cypress.Commands.add('checkAttr', (taskNumber, testName, domId, viewportWidth, device, arrayName, chainer, value) => {
+  let result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Fail\n`;
+  arrayName.push(result);
+  cy.viewport(viewportWidth, 700);
+  cy.get(`#${domId}`).should(chainer, value).then(() => {
+    arrayName.pop();
+    result = `Task: ${taskNumber}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${Cypress.browser.name}, Viewport: ${viewportWidth} x 700, Device: ${device}, Status: Pass\n`;
+    arrayName.push(result);
+  });
+});
