@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/mdoig/applitools-browser-testing#readme",
   "dependencies": {
-    "@applitools/eyes-cypress": "^3.23.6",
+    "@applitools/eyes-cypress": "^3.27.8",
     "cypress": "^7.4.0"
   }
 }
